@@ -5,55 +5,55 @@
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>index</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <style type="text/css">
-  pre { line-height: 125%; }
-  body {
-      background-color: black;
-      color: white;
-  }
-  
-  td.linenos .normal, span.linenos,
-  td.linenos .special, span.linenos.special {
-      color: white;
-      background-color: black;
-  }
-  
-  .highlight .hll { background-color: #222; }
-  .highlight { background: black; color: white; }
-  
-  .highlight .c, .highlight .ch, .highlight .cm, .highlight .cp,
-  .highlight .cpf, .highlight .c1, .highlight .cs {
-      color: #aaaaaa; /* Gray for comments */
-      font-style: italic;
-  }
-
-  .highlight .k, .highlight .kc, .highlight .kd, .highlight .kn,
-  .highlight .kp, .highlight .kr, .highlight .kt {
-      color: #ffcc66; /* Soft yellow for keywords */
-      font-weight: bold;
-  }
-
-  .highlight .o, .highlight .ow, .highlight .pm {
-      color: #ff6666; /* Red for operators */
-      font-weight: bold;
-  }
-
-  .highlight .p, .highlight .w {
-      color: white; /* White for punctuation */
-  }
-
-  .highlight .m, .highlight .mb, .highlight .mf, .highlight .mh,
-  .highlight .mi, .highlight .mo, .highlight .il {
-      color: #66ccff; /* Blue for numbers */
-  }
-
-  .highlight .s, .highlight .sa, .highlight .sb, .highlight .sc,
-  .highlight .dl, .highlight .sd, .highlight .s2, .highlight .se,
-  .highlight .sh, .highlight .si, .highlight .sx, .highlight .sr,
-  .highlight .s1, .highlight .ss {
-      color: #99ff99; /* Green for strings */
-  }
-</style>
-
+    pre { line-height: 125%; }
+td.linenos .normal { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }
+span.linenos { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }
+td.linenos .special { color: #000000; background-color: #ffffc0; padding-left: 5px; padding-right: 5px; }
+span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 5px; padding-right: 5px; }
+.highlight .hll { background-color: var(--jp-cell-editor-active-background) }
+.highlight { background: var(--jp-cell-editor-background); color: var(--jp-mirror-editor-variable-color) }
+.highlight .c { color: var(--jp-mirror-editor-comment-color); font-style: italic } /* Comment */
+.highlight .err { color: var(--jp-mirror-editor-error-color) } /* Error */
+.highlight .k { color: var(--jp-mirror-editor-keyword-color); font-weight: bold } /* Keyword */
+.highlight .o { color: var(--jp-mirror-editor-operator-color); font-weight: bold } /* Operator */
+.highlight .p { color: var(--jp-mirror-editor-punctuation-color) } /* Punctuation */
+.highlight .ch { color: var(--jp-mirror-editor-comment-color); font-style: italic } /* Comment.Hashbang */
+.highlight .cm { color: var(--jp-mirror-editor-comment-color); font-style: italic } /* Comment.Multiline */
+.highlight .cp { color: var(--jp-mirror-editor-comment-color); font-style: italic } /* Comment.Preproc */
+.highlight .cpf { color: var(--jp-mirror-editor-comment-color); font-style: italic } /* Comment.PreprocFile */
+.highlight .c1 { color: var(--jp-mirror-editor-comment-color); font-style: italic } /* Comment.Single */
+.highlight .cs { color: var(--jp-mirror-editor-comment-color); font-style: italic } /* Comment.Special */
+.highlight .kc { color: var(--jp-mirror-editor-keyword-color); font-weight: bold } /* Keyword.Constant */
+.highlight .kd { color: var(--jp-mirror-editor-keyword-color); font-weight: bold } /* Keyword.Declaration */
+.highlight .kn { color: var(--jp-mirror-editor-keyword-color); font-weight: bold } /* Keyword.Namespace */
+.highlight .kp { color: var(--jp-mirror-editor-keyword-color); font-weight: bold } /* Keyword.Pseudo */
+.highlight .kr { color: var(--jp-mirror-editor-keyword-color); font-weight: bold } /* Keyword.Reserved */
+.highlight .kt { color: var(--jp-mirror-editor-keyword-color); font-weight: bold } /* Keyword.Type */
+.highlight .m { color: var(--jp-mirror-editor-number-color) } /* Literal.Number */
+.highlight .s { color: var(--jp-mirror-editor-string-color) } /* Literal.String */
+.highlight .ow { color: var(--jp-mirror-editor-operator-color); font-weight: bold } /* Operator.Word */
+.highlight .pm { color: var(--jp-mirror-editor-punctuation-color) } /* Punctuation.Marker */
+.highlight .w { color: var(--jp-mirror-editor-variable-color) } /* Text.Whitespace */
+.highlight .mb { color: var(--jp-mirror-editor-number-color) } /* Literal.Number.Bin */
+.highlight .mf { color: var(--jp-mirror-editor-number-color) } /* Literal.Number.Float */
+.highlight .mh { color: var(--jp-mirror-editor-number-color) } /* Literal.Number.Hex */
+.highlight .mi { color: var(--jp-mirror-editor-number-color) } /* Literal.Number.Integer */
+.highlight .mo { color: var(--jp-mirror-editor-number-color) } /* Literal.Number.Oct */
+.highlight .sa { color: var(--jp-mirror-editor-string-color) } /* Literal.String.Affix */
+.highlight .sb { color: var(--jp-mirror-editor-string-color) } /* Literal.String.Backtick */
+.highlight .sc { color: var(--jp-mirror-editor-string-color) } /* Literal.String.Char */
+.highlight .dl { color: var(--jp-mirror-editor-string-color) } /* Literal.String.Delimiter */
+.highlight .sd { color: var(--jp-mirror-editor-string-color) } /* Literal.String.Doc */
+.highlight .s2 { color: var(--jp-mirror-editor-string-color) } /* Literal.String.Double */
+.highlight .se { color: var(--jp-mirror-editor-string-color) } /* Literal.String.Escape */
+.highlight .sh { color: var(--jp-mirror-editor-string-color) } /* Literal.String.Heredoc */
+.highlight .si { color: var(--jp-mirror-editor-string-color) } /* Literal.String.Interpol */
+.highlight .sx { color: var(--jp-mirror-editor-string-color) } /* Literal.String.Other */
+.highlight .sr { color: var(--jp-mirror-editor-string-color) } /* Literal.String.Regex */
+.highlight .s1 { color: var(--jp-mirror-editor-string-color) } /* Literal.String.Single */
+.highlight .ss { color: var(--jp-mirror-editor-string-color) } /* Literal.String.Symbol */
+.highlight .il { color: var(--jp-mirror-editor-number-color) } /* Literal.Number.Integer.Long */
+  </style>
 <style type="text/css">
 /*-----------------------------------------------------------------------------
 | Copyright (c) Jupyter Development Team.
@@ -8034,12 +8034,13 @@ unchanged: JJ
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [6]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">spacy</span> <span class="kn">import</span> <span class="n">displacy</span>
 <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">'text.txt'</span><span class="p">)</span> <span class="k">as</span> <span class="n">file</span><span class="p">:</span>
     <span class="n">text</span><span class="o">=</span><span class="n">file</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+<span class="n">nlp</span><span class="o">=</span><span class="n">spacy</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="s1">'en_core_web_sm'</span><span class="p">)</span>
 <span class="n">doc</span><span class="o">=</span><span class="n">nlp</span><span class="p">(</span><span class="n">text</span><span class="p">)</span>
 <span class="k">for</span> <span class="n">token</span> <span class="ow">in</span> <span class="n">doc</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">token</span><span class="o">.</span><span class="n">text</span><span class="si">}</span><span class="s2"> --&gt; </span><span class="si">{</span><span class="n">token</span><span class="o">.</span><span class="n">dep_</span><span class="si">}</span><span class="s2"> --&gt; </span><span class="si">{</span><span class="n">token</span><span class="o">.</span><span class="n">head</span><span class="o">.</span><span class="n">text</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
@@ -8801,25 +8802,24 @@ unchanged --&gt; acomp --&gt; remaining
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [5]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [3]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">warnings</span>
-<span class="n">warnings</span><span class="o">.</span><span class="n">filterwarnings</span><span class="p">(</span><span class="s2">"ignore"</span><span class="p">,</span> <span class="n">category</span><span class="o">=</span><span class="ne">FutureWarning</span><span class="p">)</span>
-<span class="n">warnings</span><span class="o">.</span><span class="n">filterwarnings</span><span class="p">(</span><span class="s2">"ignore"</span><span class="p">,</span> <span class="n">category</span><span class="o">=</span><span class="ne">UserWarning</span><span class="p">)</span>
-<span class="kn">from</span> <span class="nn">spacy</span> <span class="kn">import</span> <span class="n">displacy</span>
-<span class="kn">import</span> <span class="nn">spacy</span>
-<span class="n">nlp</span><span class="o">=</span><span class="n">spacy</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="s1">'en_core_web_sm'</span><span class="p">)</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">spacy</span>
 <span class="kn">import</span> <span class="nn">benepar</span>
+<span class="n">nlp</span> <span class="o">=</span> <span class="n">spacy</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="s1">'en_core_web_sm'</span><span class="p">)</span>
 <span class="n">benepar</span><span class="o">.</span><span class="n">download</span><span class="p">(</span><span class="s1">'benepar_en3'</span><span class="p">)</span>
-<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">'text.txt'</span><span class="p">)</span> <span class="k">as</span> <span class="n">file</span><span class="p">:</span>
-    <span class="n">text</span><span class="o">=</span><span class="n">file</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
-<span class="k">if</span><span class="p">(</span><span class="s2">"benepar"</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">nlp</span><span class="o">.</span><span class="n">pipe_names</span><span class="p">):</span>
+<span class="k">if</span> <span class="s2">"benepar"</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">nlp</span><span class="o">.</span><span class="n">pipe_names</span><span class="p">:</span>
     <span class="n">nlp</span><span class="o">.</span><span class="n">add_pipe</span><span class="p">(</span><span class="s2">"benepar"</span><span class="p">,</span> <span class="n">config</span><span class="o">=</span><span class="p">{</span><span class="s2">"model"</span><span class="p">:</span> <span class="s2">"benepar_en3"</span><span class="p">})</span>
-<span class="n">doc</span><span class="o">=</span><span class="n">nlp</span><span class="p">(</span><span class="n">text</span><span class="p">)</span>
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">'text.txt'</span><span class="p">)</span> <span class="k">as</span> <span class="n">file</span><span class="p">:</span>
+    <span class="n">text</span> <span class="o">=</span> <span class="n">file</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+<span class="n">doc</span> <span class="o">=</span> <span class="n">nlp</span><span class="p">(</span><span class="n">text</span><span class="p">)</span>
 <span class="k">for</span> <span class="n">sent</span> <span class="ow">in</span> <span class="n">doc</span><span class="o">.</span><span class="n">sents</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">sent</span><span class="o">.</span><span class="n">_</span><span class="o">.</span><span class="n">parse_string</span><span class="p">)</span>
-<span class="n">displacy</span><span class="o">.</span><span class="n">render</span><span class="p">(</span><span class="n">doc</span><span class="p">)</span>
+<span class="kn">from</span> <span class="nn">nltk</span> <span class="kn">import</span> <span class="n">Tree</span>
+<span class="k">for</span> <span class="n">sent</span> <span class="ow">in</span> <span class="n">doc</span><span class="o">.</span><span class="n">sents</span><span class="p">:</span>
+    <span class="n">tree</span> <span class="o">=</span> <span class="n">Tree</span><span class="o">.</span><span class="n">fromstring</span><span class="p">(</span><span class="n">sent</span><span class="o">.</span><span class="n">_</span><span class="o">.</span><span class="n">parse_string</span><span class="p">)</span>
+    <span class="n">tree</span><span class="o">.</span><span class="n">pretty_print</span><span class="p">()</span>  <span class="c1"># This will draw a nice tree in the console</span>
 </pre></div>
 </div>
 </div>
@@ -8835,11 +8835,9 @@ unchanged --&gt; acomp --&gt; remaining
 <pre>[nltk_data] Downloading package benepar_en3 to
 [nltk_data]     C:\Users\thuni\AppData\Roaming\nltk_data...
 [nltk_data]   Package benepar_en3 is already up-to-date!
-c:\Python312\Lib\site-packages\tqdm\auto.py:21: TqdmWarning: IProgress not found. Please update jupyter and ipywidgets. See https://ipywidgets.readthedocs.io/en/stable/user_install.html
-  from .autonotebook import tqdm as notebook_tqdm
-You are using the default legacy behaviour of the &lt;class 'transformers.models.t5.tokenization_t5.T5Tokenizer'&gt;. This is expected, and simply means that the `legacy` (previous) behavior will be used so nothing changes for you. If you want to use the new behaviour, set `legacy=False`. This should only be set if you understand what it means, and thoroughly read the reason why this was added as explained in https://github.com/huggingface/transformers/pull/24565
+c:\Python312\Lib\site-packages\benepar\parse_chart.py:169: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  state_dict = torch.load(
 You're using a T5TokenizerFast tokenizer. Please note that with a fast tokenizer, using the `__call__` method is faster than using a method to encode the text followed by a call to the `pad` method to get a padded encoding.
-Passing a tuple of `past_key_values` is deprecated and will be removed in Transformers v4.48.0. You should pass an instance of `EncoderDecoderCache` instead, e.g. `past_key_values=EncoderDecoderCache.from_legacy_cache(past_key_values)`.
 </pre>
 </div>
 </div>
@@ -8849,664 +8847,71 @@ Passing a tuple of `past_key_values` is deprecated and will be removed in Transf
 <pre>(S (NP (NNP Lorem) (NNP Ipsum)) (VP (VBZ is) (ADVP (RB simply)) (NP (NP (JJ dummy) (NN text)) (PP (IN of) (NP (DT the) (NML (NN printing) (CC and) (NN typesetting)) (NN industry))))) (. .))
 (S (NP (NNP Lorem) (NNP Ipsum)) (VP (VBZ has) (VP (VBN been) (NP (NP (DT the) (NN industry) (POS 's)) (JJ standard) (NN dummy) (NN text)) (PP (ADVP (RB ever)) (IN since) (NP (NP (DT the) (NNS 1500s)) (, ,) (SBAR (WHADVP (WRB when)) (S (NP (DT an) (JJ unknown) (NN printer)) (VP (VP (VBD took) (NP (NP (DT a) (NN galley)) (PP (IN of) (NP (NN type))))) (CC and) (VP (VBD scrambled) (NP (PRP it)) (S (VP (TO to) (VP (VB make) (NP (DT a) (NML (NN type) (NN specimen)) (NN book))))))))))))) (. .))
 (S (NP (PRP It)) (VP (VBZ has) (VP (CONJP (VBN survived) (CONJP (RB not) (RB only))) (NP (CD five) (NNS centuries)) (, ,) (CONJP (CC but) (RB also)) (NP (NP (DT the) (NN leap)) (PP (IN into) (NP (JJ electronic) (NN typesetting)))) (, ,) (S (VP (VBG remaining) (ADJP (RB essentially) (JJ unchanged)))))) (. .))
+                                           S                                           
+        ___________________________________|_________________________________________   
+       |                                   VP                                        | 
+       |          _________________________|___                                      |  
+       |         |    |                        NP                                    | 
+       |         |    |            ____________|_____                                |  
+       |         |    |           |                  PP                              | 
+       |         |    |           |         _________|______                         |  
+       |         |    |           |        |                NP                       | 
+       |         |    |           |        |    ____________|_________________       |  
+       NP        |   ADVP         NP       |   |           NML                |      | 
+   ____|____     |    |       ____|___     |   |      ______|_______          |      |  
+ NNP       NNP  VBZ   RB     JJ       NN   IN  DT    NN     CC      NN        NN     . 
+  |         |    |    |      |        |    |   |     |      |       |         |      |  
+Lorem     Ipsum  is simply dummy     text  of the printing and typesetting industry  . 
+
+                                                                                                   S                                                                                                                
+        ___________________________________________________________________________________________|______________________________________________________________________________________________________________   
+       |                                                  VP                                                                                                                                                      | 
+       |          ________________________________________|______________________________________________                                                                                                         |  
+       |         |                                                                                       VP                                                                                                       | 
+       |         |    ___________________________________________________________________________________|___________________________                                                                             |  
+       |         |   |                 |                                                                                             PP                                                                           | 
+       |         |   |                 |                        _____________________________________________________________________|_________                                                                   |  
+       |         |   |                 |                       |     |                                                                         NP                                                                 | 
+       |         |   |                 |                       |     |         ________________________________________________________________|_______                                                           |  
+       |         |   |                 |                       |     |        |         |                                                             SBAR                                                        | 
+       |         |   |                 |                       |     |        |         |     _________________________________________________________|____                                                      |  
+       |         |   |                 |                       |     |        |         |    |                                                              S                                                     | 
+       |         |   |                 |                       |     |        |         |    |            __________________________________________________|______                                               |  
+       |         |   |                 |                       |     |        |         |    |           |                                                         VP                                             | 
+       |         |   |                 |                       |     |        |         |    |           |                            _____________________________|______                                        |  
+       |         |   |                 |                       |     |        |         |    |           |                           |                      |             VP                                      | 
+       |         |   |                 |                       |     |        |         |    |           |                           |                      |       ______|_______                                |  
+       |         |   |                 |                       |     |        |         |    |           |                           |                      |      |      |       S                               | 
+       |         |   |                 |                       |     |        |         |    |           |                           |                      |      |      |       |                               |  
+       |         |   |                 |                       |     |        |         |    |           |                           VP                     |      |      |       VP                              | 
+       |         |   |                 |                       |     |        |         |    |           |              _____________|_____                 |      |      |    ___|____                           |  
+       |         |   |                 |                       |     |        |         |    |           |             |                   NP               |      |      |   |        VP                         | 
+       |         |   |                 |                       |     |        |         |    |           |             |         __________|_______         |      |      |   |    ____|___                       |  
+       |         |   |                 NP                      |     |        |         |    |           |             |        |                  PP       |      |      |   |   |        NP                     | 
+       |         |   |           ______|__________________     |     |        |         |    |           |             |        |               ___|___     |      |      |   |   |     ___|_________________     |  
+       NP        |   |          NP           |       |    |   ADVP   |        NP        |  WHADVP        NP            |        NP             |       NP   |      |      NP  |   |    |       NML           |    | 
+   ____|____     |   |     _____|______      |       |    |    |     |     ___|____     |    |      _____|_______      |     ___|____          |       |    |      |      |   |   |    |    ____|_____       |    |  
+ NNP       NNP  VBZ VBN   DT    NN    POS    JJ      NN   NN   RB    IN   DT      NNS   ,   WRB    DT    JJ      NN   VBD   DT       NN        IN      NN   CC    VBD    PRP  TO  VB   DT  NN         NN     NN   . 
+  |         |    |   |    |     |      |     |       |    |    |     |    |        |    |    |     |     |       |     |    |        |         |       |    |      |      |   |   |    |   |          |      |    |  
+Lorem     Ipsum has been the industry  's standard dummy text ever since the     1500s  ,   when   an unknown printer took  a      galley      of     type and scrambled  it  to make  a  type     specimen book  . 
+
+                                                                    S                                                                                            
+  __________________________________________________________________|__________________________________________________________________________________________   
+ |                                                                  VP                                                                                         | 
+ |    ______________________________________________________________|____                                                                                      |  
+ |   |                                                                   VP                                                                                    | 
+ |   |              _____________________________________________________|______________________________________________________________                       |  
+ |   |             |                    |             |        |                      NP                              |                 S                      | 
+ |   |             |                    |             |        |              ________|_______                        |                 |                      |  
+ |   |           CONJP                  |             |        |             |                PP                      |                 VP                     | 
+ |   |      _______|_____               |             |        |             |         _______|_______                |       __________|_______               |  
+ NP  |     |           CONJP            NP            |      CONJP           NP       |               NP              |      |                 ADJP            | 
+ |   |     |        _____|____      ____|______       |    ____|____      ___|___     |        _______|_______        |      |           _______|_______       |  
+PRP VBZ   VBN      RB         RB   CD         NNS     ,   CC        RB   DT      NN   IN      JJ              NN      ,     VBG         RB              JJ     . 
+ |   |     |       |          |    |           |      |   |         |    |       |    |       |               |       |      |          |               |      |  
+ It has survived  not        only five     centuries  ,  but       also the     leap into electronic     typesetting  ,  remaining essentially      unchanged  . 
+
 </pre>
-</div>
-</div>
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
-<span class="tex2jax_ignore"><svg class="displacy" direction="ltr" height="574.5" id="00e81eef154b4d188f94cc0418c47c45-0" style="max-width: none; height: 574.5px; color: #000000; background: #ffffff; font-family: Arial; direction: ltr" width="10725" xml:lang="en" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<text class="displacy-token" fill="currentColor" text-anchor="middle" y="484.5">
-<tspan class="displacy-word" fill="currentColor" x="50">Lorem</tspan>
-<tspan class="displacy-tag" dy="2em" fill="currentColor" x="50">PROPN</tspan>
-</text>
-<text class="displacy-token" fill="currentColor" text-anchor="middle" y="484.5">
-<tspan class="displacy-word" fill="currentColor" x="225">Ipsum</tspan>
-<tspan class="displacy-tag" dy="2em" fill="currentColor" x="225">PROPN</tspan>
-</text>
-<text class="displacy-token" fill="currentColor" text-anchor="middle" y="484.5">
-<tspan class="displacy-word" fill="currentColor" x="400">is</tspan>
-<tspan class="displacy-tag" dy="2em" fill="currentColor" x="400">AUX</tspan>
-</text>
-<text class="displacy-token" fill="currentColor" text-anchor="middle" y="484.5">
-<tspan class="displacy-word" fill="currentColor" x="575">simply</tspan>
-<tspan class="displacy-tag" dy="2em" fill="currentColor" x="575">ADV</tspan>
-</text>
-<text class="displacy-token" fill="currentColor" text-anchor="middle" y="484.5">
-<tspan class="displacy-word" fill="currentColor" x="750">dummy</tspan>
-<tspan class="displacy-tag" dy="2em" fill="currentColor" x="750">ADJ</tspan>
-</text>
-<text class="displacy-token" fill="currentColor" text-anchor="middle" y="484.5">
-<tspan class="displacy-word" fill="currentColor" x="925">text</tspan>
-<tspan class="displacy-tag" dy="2em" fill="currentColor" x="925">NOUN</tspan>
-</text>
-<text class="displacy-token" fill="currentColor" text-anchor="middle" y="484.5">
-<tspan class="displacy-word" fill="currentColor" x="1100">of</tspan>
-<tspan class="displacy-tag" dy="2em" fill="currentColor" x="1100">ADP</tspan>
-</text>
-<text class="displacy-token" fill="currentColor" text-anchor="middle" y="484.5">
-<tspan class="displacy-word" fill="currentColor" x="1275">the</tspan>
-<tspan class="displacy-tag" dy="2em" fill="currentColor" x="1275">DET</tspan>
-</text>
-<text class="displacy-token" fill="currentColor" text-anchor="middle" y="484.5">
-<tspan class="displacy-word" fill="currentColor" x="1450">printing</tspan>
-<tspan class="displacy-tag" dy="2em" fill="currentColor" x="1450">NOUN</tspan>
-</text>
-<text class="displacy-token" fill="currentColor" text-anchor="middle" y="484.5">
-<tspan class="displacy-word" fill="currentColor" x="1625">and</tspan>
-<tspan class="displacy-tag" dy="2em" fill="currentColor" x="1625">CCONJ</tspan>
-</text>
-<text class="displacy-token" fill="currentColor" text-anchor="middle" y="484.5">
-<tspan class="displacy-word" fill="currentColor" x="1800">typesetting</tspan>
-<tspan class="displacy-tag" dy="2em" fill="currentColor" x="1800">VERB</tspan>
-</text>
-<text class="displacy-token" fill="currentColor" text-anchor="middle" y="484.5">
-<tspan class="displacy-word" fill="currentColor" x="1975">industry.</tspan>
-<tspan class="displacy-tag" dy="2em" fill="currentColor" x="1975">NOUN</tspan>
-</text>
-<text class="displacy-token" fill="currentColor" text-anchor="middle" y="484.5">
-<tspan class="displacy-word" fill="currentColor" x="2150">Lorem</tspan>
-<tspan class="displacy-tag" dy="2em" fill="currentColor" x="2150">PROPN</tspan>
-</text>
-<text class="displacy-token" fill="currentColor" text-anchor="middle" y="484.5">
-<tspan class="displacy-word" fill="currentColor" x="2325">Ipsum</tspan>
-<tspan class="displacy-tag" dy="2em" fill="currentColor" x="2325">PROPN</tspan>
-</text>
-<text class="displacy-token" fill="currentColor" text-anchor="middle" y="484.5">
-<tspan class="displacy-word" fill="currentColor" x="2500">has</tspan>
-<tspan class="displacy-tag" dy="2em" fill="currentColor" x="2500">AUX</tspan>
-</text>
-<text class="displacy-token" fill="currentColor" text-anchor="middle" y="484.5">
-<tspan class="displacy-word" fill="currentColor" x="2675">been</tspan>
-<tspan class="displacy-tag" dy="2em" fill="currentColor" x="2675">AUX</tspan>
-</text>
-<text class="displacy-token" fill="currentColor" text-anchor="middle" y="484.5">
-<tspan class="displacy-word" fill="currentColor" x="2850">the</tspan>
-<tspan class="displacy-tag" dy="2em" fill="currentColor" x="2850">DET</tspan>
-</text>
-<text class="displacy-token" fill="currentColor" text-anchor="middle" y="484.5">
-<tspan class="displacy-word" fill="currentColor" x="3025">industry</tspan>
-<tspan class="displacy-tag" dy="2em" fill="currentColor" x="3025">NOUN</tspan>
-</text>
-<text class="displacy-token" fill="currentColor" text-anchor="middle" y="484.5">
-<tspan class="displacy-word" fill="currentColor" x="3200">'s</tspan>
-<tspan class="displacy-tag" dy="2em" fill="currentColor" x="3200">PART</tspan>
-</text>
-<text class="displacy-token" fill="currentColor" text-anchor="middle" y="484.5">
-<tspan class="displacy-word" fill="currentColor" x="3375">standard</tspan>
-<tspan class="displacy-tag" dy="2em" fill="currentColor" x="3375">ADJ</tspan>
-</text>
-<text class="displacy-token" fill="currentColor" text-anchor="middle" y="484.5">
-<tspan class="displacy-word" fill="currentColor" x="3550">dummy</tspan>
-<tspan class="displacy-tag" dy="2em" fill="currentColor" x="3550">ADJ</tspan>
-</text>
-<text class="displacy-token" fill="currentColor" text-anchor="middle" y="484.5">
-<tspan class="displacy-word" fill="currentColor" x="3725">text</tspan>
-<tspan class="displacy-tag" dy="2em" fill="currentColor" x="3725">NOUN</tspan>
-</text>
-<text class="displacy-token" fill="currentColor" text-anchor="middle" y="484.5">
-<tspan class="displacy-word" fill="currentColor" x="3900">ever</tspan>
-<tspan class="displacy-tag" dy="2em" fill="currentColor" x="3900">ADV</tspan>
-</text>
-<text class="displacy-token" fill="currentColor" text-anchor="middle" y="484.5">
-<tspan class="displacy-word" fill="currentColor" x="4075">since</tspan>
-<tspan class="displacy-tag" dy="2em" fill="currentColor" x="4075">SCONJ</tspan>
-</text>
-<text class="displacy-token" fill="currentColor" text-anchor="middle" y="484.5">
-<tspan class="displacy-word" fill="currentColor" x="4250">the</tspan>
-<tspan class="displacy-tag" dy="2em" fill="currentColor" x="4250">DET</tspan>
-</text>
-<text class="displacy-token" fill="currentColor" text-anchor="middle" y="484.5">
-<tspan class="displacy-word" fill="currentColor" x="4425">1500s,</tspan>
-<tspan class="displacy-tag" dy="2em" fill="currentColor" x="4425">NOUN</tspan>
-</text>
-<text class="displacy-token" fill="currentColor" text-anchor="middle" y="484.5">
-<tspan class="displacy-word" fill="currentColor" x="4600">when</tspan>
-<tspan class="displacy-tag" dy="2em" fill="currentColor" x="4600">SCONJ</tspan>
-</text>
-<text class="displacy-token" fill="currentColor" text-anchor="middle" y="484.5">
-<tspan class="displacy-word" fill="currentColor" x="4775">an</tspan>
-<tspan class="displacy-tag" dy="2em" fill="currentColor" x="4775">DET</tspan>
-</text>
-<text class="displacy-token" fill="currentColor" text-anchor="middle" y="484.5">
-<tspan class="displacy-word" fill="currentColor" x="4950">unknown</tspan>
-<tspan class="displacy-tag" dy="2em" fill="currentColor" x="4950">ADJ</tspan>
-</text>
-<text class="displacy-token" fill="currentColor" text-anchor="middle" y="484.5">
-<tspan class="displacy-word" fill="currentColor" x="5125">printer</tspan>
-<tspan class="displacy-tag" dy="2em" fill="currentColor" x="5125">NOUN</tspan>
-</text>
-<text class="displacy-token" fill="currentColor" text-anchor="middle" y="484.5">
-<tspan class="displacy-word" fill="currentColor" x="5300">took</tspan>
-<tspan class="displacy-tag" dy="2em" fill="currentColor" x="5300">VERB</tspan>
-</text>
-<text class="displacy-token" fill="currentColor" text-anchor="middle" y="484.5">
-<tspan class="displacy-word" fill="currentColor" x="5475">a</tspan>
-<tspan class="displacy-tag" dy="2em" fill="currentColor" x="5475">DET</tspan>
-</text>
-<text class="displacy-token" fill="currentColor" text-anchor="middle" y="484.5">
-<tspan class="displacy-word" fill="currentColor" x="5650">galley</tspan>
-<tspan class="displacy-tag" dy="2em" fill="currentColor" x="5650">NOUN</tspan>
-</text>
-<text class="displacy-token" fill="currentColor" text-anchor="middle" y="484.5">
-<tspan class="displacy-word" fill="currentColor" x="5825">of</tspan>
-<tspan class="displacy-tag" dy="2em" fill="currentColor" x="5825">ADP</tspan>
-</text>
-<text class="displacy-token" fill="currentColor" text-anchor="middle" y="484.5">
-<tspan class="displacy-word" fill="currentColor" x="6000">type</tspan>
-<tspan class="displacy-tag" dy="2em" fill="currentColor" x="6000">NOUN</tspan>
-</text>
-<text class="displacy-token" fill="currentColor" text-anchor="middle" y="484.5">
-<tspan class="displacy-word" fill="currentColor" x="6175">and</tspan>
-<tspan class="displacy-tag" dy="2em" fill="currentColor" x="6175">CCONJ</tspan>
-</text>
-<text class="displacy-token" fill="currentColor" text-anchor="middle" y="484.5">
-<tspan class="displacy-word" fill="currentColor" x="6350">scrambled</tspan>
-<tspan class="displacy-tag" dy="2em" fill="currentColor" x="6350">VERB</tspan>
-</text>
-<text class="displacy-token" fill="currentColor" text-anchor="middle" y="484.5">
-<tspan class="displacy-word" fill="currentColor" x="6525">it</tspan>
-<tspan class="displacy-tag" dy="2em" fill="currentColor" x="6525">PRON</tspan>
-</text>
-<text class="displacy-token" fill="currentColor" text-anchor="middle" y="484.5">
-<tspan class="displacy-word" fill="currentColor" x="6700">to</tspan>
-<tspan class="displacy-tag" dy="2em" fill="currentColor" x="6700">PART</tspan>
-</text>
-<text class="displacy-token" fill="currentColor" text-anchor="middle" y="484.5">
-<tspan class="displacy-word" fill="currentColor" x="6875">make</tspan>
-<tspan class="displacy-tag" dy="2em" fill="currentColor" x="6875">VERB</tspan>
-</text>
-<text class="displacy-token" fill="currentColor" text-anchor="middle" y="484.5">
-<tspan class="displacy-word" fill="currentColor" x="7050">a</tspan>
-<tspan class="displacy-tag" dy="2em" fill="currentColor" x="7050">DET</tspan>
-</text>
-<text class="displacy-token" fill="currentColor" text-anchor="middle" y="484.5">
-<tspan class="displacy-word" fill="currentColor" x="7225">type</tspan>
-<tspan class="displacy-tag" dy="2em" fill="currentColor" x="7225">NOUN</tspan>
-</text>
-<text class="displacy-token" fill="currentColor" text-anchor="middle" y="484.5">
-<tspan class="displacy-word" fill="currentColor" x="7400">specimen</tspan>
-<tspan class="displacy-tag" dy="2em" fill="currentColor" x="7400">NOUN</tspan>
-</text>
-<text class="displacy-token" fill="currentColor" text-anchor="middle" y="484.5">
-<tspan class="displacy-word" fill="currentColor" x="7575">book.</tspan>
-<tspan class="displacy-tag" dy="2em" fill="currentColor" x="7575">NOUN</tspan>
-</text>
-<text class="displacy-token" fill="currentColor" text-anchor="middle" y="484.5">
-<tspan class="displacy-word" fill="currentColor" x="7750">It</tspan>
-<tspan class="displacy-tag" dy="2em" fill="currentColor" x="7750">PRON</tspan>
-</text>
-<text class="displacy-token" fill="currentColor" text-anchor="middle" y="484.5">
-<tspan class="displacy-word" fill="currentColor" x="7925">has</tspan>
-<tspan class="displacy-tag" dy="2em" fill="currentColor" x="7925">AUX</tspan>
-</text>
-<text class="displacy-token" fill="currentColor" text-anchor="middle" y="484.5">
-<tspan class="displacy-word" fill="currentColor" x="8100">survived</tspan>
-<tspan class="displacy-tag" dy="2em" fill="currentColor" x="8100">VERB</tspan>
-</text>
-<text class="displacy-token" fill="currentColor" text-anchor="middle" y="484.5">
-<tspan class="displacy-word" fill="currentColor" x="8275">not</tspan>
-<tspan class="displacy-tag" dy="2em" fill="currentColor" x="8275">PART</tspan>
-</text>
-<text class="displacy-token" fill="currentColor" text-anchor="middle" y="484.5">
-<tspan class="displacy-word" fill="currentColor" x="8450">only</tspan>
-<tspan class="displacy-tag" dy="2em" fill="currentColor" x="8450">ADV</tspan>
-</text>
-<text class="displacy-token" fill="currentColor" text-anchor="middle" y="484.5">
-<tspan class="displacy-word" fill="currentColor" x="8625">five</tspan>
-<tspan class="displacy-tag" dy="2em" fill="currentColor" x="8625">NUM</tspan>
-</text>
-<text class="displacy-token" fill="currentColor" text-anchor="middle" y="484.5">
-<tspan class="displacy-word" fill="currentColor" x="8800">centuries,</tspan>
-<tspan class="displacy-tag" dy="2em" fill="currentColor" x="8800">NOUN</tspan>
-</text>
-<text class="displacy-token" fill="currentColor" text-anchor="middle" y="484.5">
-<tspan class="displacy-word" fill="currentColor" x="8975">but</tspan>
-<tspan class="displacy-tag" dy="2em" fill="currentColor" x="8975">CCONJ</tspan>
-</text>
-<text class="displacy-token" fill="currentColor" text-anchor="middle" y="484.5">
-<tspan class="displacy-word" fill="currentColor" x="9150">also</tspan>
-<tspan class="displacy-tag" dy="2em" fill="currentColor" x="9150">ADV</tspan>
-</text>
-<text class="displacy-token" fill="currentColor" text-anchor="middle" y="484.5">
-<tspan class="displacy-word" fill="currentColor" x="9325">the</tspan>
-<tspan class="displacy-tag" dy="2em" fill="currentColor" x="9325">DET</tspan>
-</text>
-<text class="displacy-token" fill="currentColor" text-anchor="middle" y="484.5">
-<tspan class="displacy-word" fill="currentColor" x="9500">leap</tspan>
-<tspan class="displacy-tag" dy="2em" fill="currentColor" x="9500">NOUN</tspan>
-</text>
-<text class="displacy-token" fill="currentColor" text-anchor="middle" y="484.5">
-<tspan class="displacy-word" fill="currentColor" x="9675">into</tspan>
-<tspan class="displacy-tag" dy="2em" fill="currentColor" x="9675">ADP</tspan>
-</text>
-<text class="displacy-token" fill="currentColor" text-anchor="middle" y="484.5">
-<tspan class="displacy-word" fill="currentColor" x="9850">electronic</tspan>
-<tspan class="displacy-tag" dy="2em" fill="currentColor" x="9850">ADJ</tspan>
-</text>
-<text class="displacy-token" fill="currentColor" text-anchor="middle" y="484.5">
-<tspan class="displacy-word" fill="currentColor" x="10025">typesetting,</tspan>
-<tspan class="displacy-tag" dy="2em" fill="currentColor" x="10025">NOUN</tspan>
-</text>
-<text class="displacy-token" fill="currentColor" text-anchor="middle" y="484.5">
-<tspan class="displacy-word" fill="currentColor" x="10200">remaining</tspan>
-<tspan class="displacy-tag" dy="2em" fill="currentColor" x="10200">VERB</tspan>
-</text>
-<text class="displacy-token" fill="currentColor" text-anchor="middle" y="484.5">
-<tspan class="displacy-word" fill="currentColor" x="10375">essentially</tspan>
-<tspan class="displacy-tag" dy="2em" fill="currentColor" x="10375">ADV</tspan>
-</text>
-<text class="displacy-token" fill="currentColor" text-anchor="middle" y="484.5">
-<tspan class="displacy-word" fill="currentColor" x="10550">unchanged.</tspan>
-<tspan class="displacy-tag" dy="2em" fill="currentColor" x="10550">ADJ</tspan>
-</text>
-<g class="displacy-arrow">
-<path class="displacy-arc" d="M70,439.5 C70,352.0 205.0,352.0 205.0,439.5" fill="none" id="arrow-00e81eef154b4d188f94cc0418c47c45-0-0" stroke="currentColor" stroke-width="2px"></path>
-<text dy="1.25em" style="font-size: 0.8em; letter-spacing: 1px">
-<textpath class="displacy-label" fill="currentColor" side="left" startoffset="50%" text-anchor="middle" xlink:href="#arrow-00e81eef154b4d188f94cc0418c47c45-0-0">compound</textpath>
-</text>
-<path class="displacy-arrowhead" d="M70,441.5 L62,429.5 78,429.5" fill="currentColor"></path>
-</g>
-<g class="displacy-arrow">
-<path class="displacy-arc" d="M245,439.5 C245,352.0 380.0,352.0 380.0,439.5" fill="none" id="arrow-00e81eef154b4d188f94cc0418c47c45-0-1" stroke="currentColor" stroke-width="2px"></path>
-<text dy="1.25em" style="font-size: 0.8em; letter-spacing: 1px">
-<textpath class="displacy-label" fill="currentColor" side="left" startoffset="50%" text-anchor="middle" xlink:href="#arrow-00e81eef154b4d188f94cc0418c47c45-0-1">nsubj</textpath>
-</text>
-<path class="displacy-arrowhead" d="M245,441.5 L237,429.5 253,429.5" fill="currentColor"></path>
-</g>
-<g class="displacy-arrow">
-<path class="displacy-arc" d="M420,439.5 C420,352.0 555.0,352.0 555.0,439.5" fill="none" id="arrow-00e81eef154b4d188f94cc0418c47c45-0-2" stroke="currentColor" stroke-width="2px"></path>
-<text dy="1.25em" style="font-size: 0.8em; letter-spacing: 1px">
-<textpath class="displacy-label" fill="currentColor" side="left" startoffset="50%" text-anchor="middle" xlink:href="#arrow-00e81eef154b4d188f94cc0418c47c45-0-2">advmod</textpath>
-</text>
-<path class="displacy-arrowhead" d="M555.0,441.5 L563.0,429.5 547.0,429.5" fill="currentColor"></path>
-</g>
-<g class="displacy-arrow">
-<path class="displacy-arc" d="M770,439.5 C770,352.0 905.0,352.0 905.0,439.5" fill="none" id="arrow-00e81eef154b4d188f94cc0418c47c45-0-3" stroke="currentColor" stroke-width="2px"></path>
-<text dy="1.25em" style="font-size: 0.8em; letter-spacing: 1px">
-<textpath class="displacy-label" fill="currentColor" side="left" startoffset="50%" text-anchor="middle" xlink:href="#arrow-00e81eef154b4d188f94cc0418c47c45-0-3">amod</textpath>
-</text>
-<path class="displacy-arrowhead" d="M770,441.5 L762,429.5 778,429.5" fill="currentColor"></path>
-</g>
-<g class="displacy-arrow">
-<path class="displacy-arc" d="M420,439.5 C420,264.5 910.0,264.5 910.0,439.5" fill="none" id="arrow-00e81eef154b4d188f94cc0418c47c45-0-4" stroke="currentColor" stroke-width="2px"></path>
-<text dy="1.25em" style="font-size: 0.8em; letter-spacing: 1px">
-<textpath class="displacy-label" fill="currentColor" side="left" startoffset="50%" text-anchor="middle" xlink:href="#arrow-00e81eef154b4d188f94cc0418c47c45-0-4">attr</textpath>
-</text>
-<path class="displacy-arrowhead" d="M910.0,441.5 L918.0,429.5 902.0,429.5" fill="currentColor"></path>
-</g>
-<g class="displacy-arrow">
-<path class="displacy-arc" d="M945,439.5 C945,352.0 1080.0,352.0 1080.0,439.5" fill="none" id="arrow-00e81eef154b4d188f94cc0418c47c45-0-5" stroke="currentColor" stroke-width="2px"></path>
-<text dy="1.25em" style="font-size: 0.8em; letter-spacing: 1px">
-<textpath class="displacy-label" fill="currentColor" side="left" startoffset="50%" text-anchor="middle" xlink:href="#arrow-00e81eef154b4d188f94cc0418c47c45-0-5">prep</textpath>
-</text>
-<path class="displacy-arrowhead" d="M1080.0,441.5 L1088.0,429.5 1072.0,429.5" fill="currentColor"></path>
-</g>
-<g class="displacy-arrow">
-<path class="displacy-arc" d="M1295,439.5 C1295,352.0 1430.0,352.0 1430.0,439.5" fill="none" id="arrow-00e81eef154b4d188f94cc0418c47c45-0-6" stroke="currentColor" stroke-width="2px"></path>
-<text dy="1.25em" style="font-size: 0.8em; letter-spacing: 1px">
-<textpath class="displacy-label" fill="currentColor" side="left" startoffset="50%" text-anchor="middle" xlink:href="#arrow-00e81eef154b4d188f94cc0418c47c45-0-6">det</textpath>
-</text>
-<path class="displacy-arrowhead" d="M1295,441.5 L1287,429.5 1303,429.5" fill="currentColor"></path>
-</g>
-<g class="displacy-arrow">
-<path class="displacy-arc" d="M1470,439.5 C1470,177.0 1965.0,177.0 1965.0,439.5" fill="none" id="arrow-00e81eef154b4d188f94cc0418c47c45-0-7" stroke="currentColor" stroke-width="2px"></path>
-<text dy="1.25em" style="font-size: 0.8em; letter-spacing: 1px">
-<textpath class="displacy-label" fill="currentColor" side="left" startoffset="50%" text-anchor="middle" xlink:href="#arrow-00e81eef154b4d188f94cc0418c47c45-0-7">nmod</textpath>
-</text>
-<path class="displacy-arrowhead" d="M1470,441.5 L1462,429.5 1478,429.5" fill="currentColor"></path>
-</g>
-<g class="displacy-arrow">
-<path class="displacy-arc" d="M1470,439.5 C1470,352.0 1605.0,352.0 1605.0,439.5" fill="none" id="arrow-00e81eef154b4d188f94cc0418c47c45-0-8" stroke="currentColor" stroke-width="2px"></path>
-<text dy="1.25em" style="font-size: 0.8em; letter-spacing: 1px">
-<textpath class="displacy-label" fill="currentColor" side="left" startoffset="50%" text-anchor="middle" xlink:href="#arrow-00e81eef154b4d188f94cc0418c47c45-0-8">cc</textpath>
-</text>
-<path class="displacy-arrowhead" d="M1605.0,441.5 L1613.0,429.5 1597.0,429.5" fill="currentColor"></path>
-</g>
-<g class="displacy-arrow">
-<path class="displacy-arc" d="M1470,439.5 C1470,264.5 1785.0,264.5 1785.0,439.5" fill="none" id="arrow-00e81eef154b4d188f94cc0418c47c45-0-9" stroke="currentColor" stroke-width="2px"></path>
-<text dy="1.25em" style="font-size: 0.8em; letter-spacing: 1px">
-<textpath class="displacy-label" fill="currentColor" side="left" startoffset="50%" text-anchor="middle" xlink:href="#arrow-00e81eef154b4d188f94cc0418c47c45-0-9">conj</textpath>
-</text>
-<path class="displacy-arrowhead" d="M1785.0,441.5 L1793.0,429.5 1777.0,429.5" fill="currentColor"></path>
-</g>
-<g class="displacy-arrow">
-<path class="displacy-arc" d="M1120,439.5 C1120,89.5 1970.0,89.5 1970.0,439.5" fill="none" id="arrow-00e81eef154b4d188f94cc0418c47c45-0-10" stroke="currentColor" stroke-width="2px"></path>
-<text dy="1.25em" style="font-size: 0.8em; letter-spacing: 1px">
-<textpath class="displacy-label" fill="currentColor" side="left" startoffset="50%" text-anchor="middle" xlink:href="#arrow-00e81eef154b4d188f94cc0418c47c45-0-10">pobj</textpath>
-</text>
-<path class="displacy-arrowhead" d="M1970.0,441.5 L1978.0,429.5 1962.0,429.5" fill="currentColor"></path>
-</g>
-<g class="displacy-arrow">
-<path class="displacy-arc" d="M2170,439.5 C2170,352.0 2305.0,352.0 2305.0,439.5" fill="none" id="arrow-00e81eef154b4d188f94cc0418c47c45-0-11" stroke="currentColor" stroke-width="2px"></path>
-<text dy="1.25em" style="font-size: 0.8em; letter-spacing: 1px">
-<textpath class="displacy-label" fill="currentColor" side="left" startoffset="50%" text-anchor="middle" xlink:href="#arrow-00e81eef154b4d188f94cc0418c47c45-0-11">compound</textpath>
-</text>
-<path class="displacy-arrowhead" d="M2170,441.5 L2162,429.5 2178,429.5" fill="currentColor"></path>
-</g>
-<g class="displacy-arrow">
-<path class="displacy-arc" d="M2345,439.5 C2345,264.5 2660.0,264.5 2660.0,439.5" fill="none" id="arrow-00e81eef154b4d188f94cc0418c47c45-0-12" stroke="currentColor" stroke-width="2px"></path>
-<text dy="1.25em" style="font-size: 0.8em; letter-spacing: 1px">
-<textpath class="displacy-label" fill="currentColor" side="left" startoffset="50%" text-anchor="middle" xlink:href="#arrow-00e81eef154b4d188f94cc0418c47c45-0-12">nsubj</textpath>
-</text>
-<path class="displacy-arrowhead" d="M2345,441.5 L2337,429.5 2353,429.5" fill="currentColor"></path>
-</g>
-<g class="displacy-arrow">
-<path class="displacy-arc" d="M2520,439.5 C2520,352.0 2655.0,352.0 2655.0,439.5" fill="none" id="arrow-00e81eef154b4d188f94cc0418c47c45-0-13" stroke="currentColor" stroke-width="2px"></path>
-<text dy="1.25em" style="font-size: 0.8em; letter-spacing: 1px">
-<textpath class="displacy-label" fill="currentColor" side="left" startoffset="50%" text-anchor="middle" xlink:href="#arrow-00e81eef154b4d188f94cc0418c47c45-0-13">aux</textpath>
-</text>
-<path class="displacy-arrowhead" d="M2520,441.5 L2512,429.5 2528,429.5" fill="currentColor"></path>
-</g>
-<g class="displacy-arrow">
-<path class="displacy-arc" d="M2870,439.5 C2870,352.0 3005.0,352.0 3005.0,439.5" fill="none" id="arrow-00e81eef154b4d188f94cc0418c47c45-0-14" stroke="currentColor" stroke-width="2px"></path>
-<text dy="1.25em" style="font-size: 0.8em; letter-spacing: 1px">
-<textpath class="displacy-label" fill="currentColor" side="left" startoffset="50%" text-anchor="middle" xlink:href="#arrow-00e81eef154b4d188f94cc0418c47c45-0-14">det</textpath>
-</text>
-<path class="displacy-arrowhead" d="M2870,441.5 L2862,429.5 2878,429.5" fill="currentColor"></path>
-</g>
-<g class="displacy-arrow">
-<path class="displacy-arc" d="M3045,439.5 C3045,177.0 3715.0,177.0 3715.0,439.5" fill="none" id="arrow-00e81eef154b4d188f94cc0418c47c45-0-15" stroke="currentColor" stroke-width="2px"></path>
-<text dy="1.25em" style="font-size: 0.8em; letter-spacing: 1px">
-<textpath class="displacy-label" fill="currentColor" side="left" startoffset="50%" text-anchor="middle" xlink:href="#arrow-00e81eef154b4d188f94cc0418c47c45-0-15">poss</textpath>
-</text>
-<path class="displacy-arrowhead" d="M3045,441.5 L3037,429.5 3053,429.5" fill="currentColor"></path>
-</g>
-<g class="displacy-arrow">
-<path class="displacy-arc" d="M3045,439.5 C3045,352.0 3180.0,352.0 3180.0,439.5" fill="none" id="arrow-00e81eef154b4d188f94cc0418c47c45-0-16" stroke="currentColor" stroke-width="2px"></path>
-<text dy="1.25em" style="font-size: 0.8em; letter-spacing: 1px">
-<textpath class="displacy-label" fill="currentColor" side="left" startoffset="50%" text-anchor="middle" xlink:href="#arrow-00e81eef154b4d188f94cc0418c47c45-0-16">case</textpath>
-</text>
-<path class="displacy-arrowhead" d="M3180.0,441.5 L3188.0,429.5 3172.0,429.5" fill="currentColor"></path>
-</g>
-<g class="displacy-arrow">
-<path class="displacy-arc" d="M3395,439.5 C3395,264.5 3710.0,264.5 3710.0,439.5" fill="none" id="arrow-00e81eef154b4d188f94cc0418c47c45-0-17" stroke="currentColor" stroke-width="2px"></path>
-<text dy="1.25em" style="font-size: 0.8em; letter-spacing: 1px">
-<textpath class="displacy-label" fill="currentColor" side="left" startoffset="50%" text-anchor="middle" xlink:href="#arrow-00e81eef154b4d188f94cc0418c47c45-0-17">amod</textpath>
-</text>
-<path class="displacy-arrowhead" d="M3395,441.5 L3387,429.5 3403,429.5" fill="currentColor"></path>
-</g>
-<g class="displacy-arrow">
-<path class="displacy-arc" d="M3570,439.5 C3570,352.0 3705.0,352.0 3705.0,439.5" fill="none" id="arrow-00e81eef154b4d188f94cc0418c47c45-0-18" stroke="currentColor" stroke-width="2px"></path>
-<text dy="1.25em" style="font-size: 0.8em; letter-spacing: 1px">
-<textpath class="displacy-label" fill="currentColor" side="left" startoffset="50%" text-anchor="middle" xlink:href="#arrow-00e81eef154b4d188f94cc0418c47c45-0-18">amod</textpath>
-</text>
-<path class="displacy-arrowhead" d="M3570,441.5 L3562,429.5 3578,429.5" fill="currentColor"></path>
-</g>
-<g class="displacy-arrow">
-<path class="displacy-arc" d="M2695,439.5 C2695,89.5 3720.0,89.5 3720.0,439.5" fill="none" id="arrow-00e81eef154b4d188f94cc0418c47c45-0-19" stroke="currentColor" stroke-width="2px"></path>
-<text dy="1.25em" style="font-size: 0.8em; letter-spacing: 1px">
-<textpath class="displacy-label" fill="currentColor" side="left" startoffset="50%" text-anchor="middle" xlink:href="#arrow-00e81eef154b4d188f94cc0418c47c45-0-19">attr</textpath>
-</text>
-<path class="displacy-arrowhead" d="M3720.0,441.5 L3728.0,429.5 3712.0,429.5" fill="currentColor"></path>
-</g>
-<g class="displacy-arrow">
-<path class="displacy-arc" d="M3920,439.5 C3920,352.0 4055.0,352.0 4055.0,439.5" fill="none" id="arrow-00e81eef154b4d188f94cc0418c47c45-0-20" stroke="currentColor" stroke-width="2px"></path>
-<text dy="1.25em" style="font-size: 0.8em; letter-spacing: 1px">
-<textpath class="displacy-label" fill="currentColor" side="left" startoffset="50%" text-anchor="middle" xlink:href="#arrow-00e81eef154b4d188f94cc0418c47c45-0-20">advmod</textpath>
-</text>
-<path class="displacy-arrowhead" d="M3920,441.5 L3912,429.5 3928,429.5" fill="currentColor"></path>
-</g>
-<g class="displacy-arrow">
-<path class="displacy-arc" d="M2695,439.5 C2695,2.0 4075.0,2.0 4075.0,439.5" fill="none" id="arrow-00e81eef154b4d188f94cc0418c47c45-0-21" stroke="currentColor" stroke-width="2px"></path>
-<text dy="1.25em" style="font-size: 0.8em; letter-spacing: 1px">
-<textpath class="displacy-label" fill="currentColor" side="left" startoffset="50%" text-anchor="middle" xlink:href="#arrow-00e81eef154b4d188f94cc0418c47c45-0-21">prep</textpath>
-</text>
-<path class="displacy-arrowhead" d="M4075.0,441.5 L4083.0,429.5 4067.0,429.5" fill="currentColor"></path>
-</g>
-<g class="displacy-arrow">
-<path class="displacy-arc" d="M4270,439.5 C4270,352.0 4405.0,352.0 4405.0,439.5" fill="none" id="arrow-00e81eef154b4d188f94cc0418c47c45-0-22" stroke="currentColor" stroke-width="2px"></path>
-<text dy="1.25em" style="font-size: 0.8em; letter-spacing: 1px">
-<textpath class="displacy-label" fill="currentColor" side="left" startoffset="50%" text-anchor="middle" xlink:href="#arrow-00e81eef154b4d188f94cc0418c47c45-0-22">det</textpath>
-</text>
-<path class="displacy-arrowhead" d="M4270,441.5 L4262,429.5 4278,429.5" fill="currentColor"></path>
-</g>
-<g class="displacy-arrow">
-<path class="displacy-arc" d="M4095,439.5 C4095,264.5 4410.0,264.5 4410.0,439.5" fill="none" id="arrow-00e81eef154b4d188f94cc0418c47c45-0-23" stroke="currentColor" stroke-width="2px"></path>
-<text dy="1.25em" style="font-size: 0.8em; letter-spacing: 1px">
-<textpath class="displacy-label" fill="currentColor" side="left" startoffset="50%" text-anchor="middle" xlink:href="#arrow-00e81eef154b4d188f94cc0418c47c45-0-23">pobj</textpath>
-</text>
-<path class="displacy-arrowhead" d="M4410.0,441.5 L4418.0,429.5 4402.0,429.5" fill="currentColor"></path>
-</g>
-<g class="displacy-arrow">
-<path class="displacy-arc" d="M4620,439.5 C4620,177.0 5290.0,177.0 5290.0,439.5" fill="none" id="arrow-00e81eef154b4d188f94cc0418c47c45-0-24" stroke="currentColor" stroke-width="2px"></path>
-<text dy="1.25em" style="font-size: 0.8em; letter-spacing: 1px">
-<textpath class="displacy-label" fill="currentColor" side="left" startoffset="50%" text-anchor="middle" xlink:href="#arrow-00e81eef154b4d188f94cc0418c47c45-0-24">advmod</textpath>
-</text>
-<path class="displacy-arrowhead" d="M4620,441.5 L4612,429.5 4628,429.5" fill="currentColor"></path>
-</g>
-<g class="displacy-arrow">
-<path class="displacy-arc" d="M4795,439.5 C4795,264.5 5110.0,264.5 5110.0,439.5" fill="none" id="arrow-00e81eef154b4d188f94cc0418c47c45-0-25" stroke="currentColor" stroke-width="2px"></path>
-<text dy="1.25em" style="font-size: 0.8em; letter-spacing: 1px">
-<textpath class="displacy-label" fill="currentColor" side="left" startoffset="50%" text-anchor="middle" xlink:href="#arrow-00e81eef154b4d188f94cc0418c47c45-0-25">det</textpath>
-</text>
-<path class="displacy-arrowhead" d="M4795,441.5 L4787,429.5 4803,429.5" fill="currentColor"></path>
-</g>
-<g class="displacy-arrow">
-<path class="displacy-arc" d="M4970,439.5 C4970,352.0 5105.0,352.0 5105.0,439.5" fill="none" id="arrow-00e81eef154b4d188f94cc0418c47c45-0-26" stroke="currentColor" stroke-width="2px"></path>
-<text dy="1.25em" style="font-size: 0.8em; letter-spacing: 1px">
-<textpath class="displacy-label" fill="currentColor" side="left" startoffset="50%" text-anchor="middle" xlink:href="#arrow-00e81eef154b4d188f94cc0418c47c45-0-26">amod</textpath>
-</text>
-<path class="displacy-arrowhead" d="M4970,441.5 L4962,429.5 4978,429.5" fill="currentColor"></path>
-</g>
-<g class="displacy-arrow">
-<path class="displacy-arc" d="M5145,439.5 C5145,352.0 5280.0,352.0 5280.0,439.5" fill="none" id="arrow-00e81eef154b4d188f94cc0418c47c45-0-27" stroke="currentColor" stroke-width="2px"></path>
-<text dy="1.25em" style="font-size: 0.8em; letter-spacing: 1px">
-<textpath class="displacy-label" fill="currentColor" side="left" startoffset="50%" text-anchor="middle" xlink:href="#arrow-00e81eef154b4d188f94cc0418c47c45-0-27">nsubj</textpath>
-</text>
-<path class="displacy-arrowhead" d="M5145,441.5 L5137,429.5 5153,429.5" fill="currentColor"></path>
-</g>
-<g class="displacy-arrow">
-<path class="displacy-arc" d="M4445,439.5 C4445,89.5 5295.0,89.5 5295.0,439.5" fill="none" id="arrow-00e81eef154b4d188f94cc0418c47c45-0-28" stroke="currentColor" stroke-width="2px"></path>
-<text dy="1.25em" style="font-size: 0.8em; letter-spacing: 1px">
-<textpath class="displacy-label" fill="currentColor" side="left" startoffset="50%" text-anchor="middle" xlink:href="#arrow-00e81eef154b4d188f94cc0418c47c45-0-28">relcl</textpath>
-</text>
-<path class="displacy-arrowhead" d="M5295.0,441.5 L5303.0,429.5 5287.0,429.5" fill="currentColor"></path>
-</g>
-<g class="displacy-arrow">
-<path class="displacy-arc" d="M5495,439.5 C5495,352.0 5630.0,352.0 5630.0,439.5" fill="none" id="arrow-00e81eef154b4d188f94cc0418c47c45-0-29" stroke="currentColor" stroke-width="2px"></path>
-<text dy="1.25em" style="font-size: 0.8em; letter-spacing: 1px">
-<textpath class="displacy-label" fill="currentColor" side="left" startoffset="50%" text-anchor="middle" xlink:href="#arrow-00e81eef154b4d188f94cc0418c47c45-0-29">det</textpath>
-</text>
-<path class="displacy-arrowhead" d="M5495,441.5 L5487,429.5 5503,429.5" fill="currentColor"></path>
-</g>
-<g class="displacy-arrow">
-<path class="displacy-arc" d="M5320,439.5 C5320,264.5 5635.0,264.5 5635.0,439.5" fill="none" id="arrow-00e81eef154b4d188f94cc0418c47c45-0-30" stroke="currentColor" stroke-width="2px"></path>
-<text dy="1.25em" style="font-size: 0.8em; letter-spacing: 1px">
-<textpath class="displacy-label" fill="currentColor" side="left" startoffset="50%" text-anchor="middle" xlink:href="#arrow-00e81eef154b4d188f94cc0418c47c45-0-30">dobj</textpath>
-</text>
-<path class="displacy-arrowhead" d="M5635.0,441.5 L5643.0,429.5 5627.0,429.5" fill="currentColor"></path>
-</g>
-<g class="displacy-arrow">
-<path class="displacy-arc" d="M5670,439.5 C5670,352.0 5805.0,352.0 5805.0,439.5" fill="none" id="arrow-00e81eef154b4d188f94cc0418c47c45-0-31" stroke="currentColor" stroke-width="2px"></path>
-<text dy="1.25em" style="font-size: 0.8em; letter-spacing: 1px">
-<textpath class="displacy-label" fill="currentColor" side="left" startoffset="50%" text-anchor="middle" xlink:href="#arrow-00e81eef154b4d188f94cc0418c47c45-0-31">prep</textpath>
-</text>
-<path class="displacy-arrowhead" d="M5805.0,441.5 L5813.0,429.5 5797.0,429.5" fill="currentColor"></path>
-</g>
-<g class="displacy-arrow">
-<path class="displacy-arc" d="M5845,439.5 C5845,352.0 5980.0,352.0 5980.0,439.5" fill="none" id="arrow-00e81eef154b4d188f94cc0418c47c45-0-32" stroke="currentColor" stroke-width="2px"></path>
-<text dy="1.25em" style="font-size: 0.8em; letter-spacing: 1px">
-<textpath class="displacy-label" fill="currentColor" side="left" startoffset="50%" text-anchor="middle" xlink:href="#arrow-00e81eef154b4d188f94cc0418c47c45-0-32">pobj</textpath>
-</text>
-<path class="displacy-arrowhead" d="M5980.0,441.5 L5988.0,429.5 5972.0,429.5" fill="currentColor"></path>
-</g>
-<g class="displacy-arrow">
-<path class="displacy-arc" d="M5320,439.5 C5320,177.0 6165.0,177.0 6165.0,439.5" fill="none" id="arrow-00e81eef154b4d188f94cc0418c47c45-0-33" stroke="currentColor" stroke-width="2px"></path>
-<text dy="1.25em" style="font-size: 0.8em; letter-spacing: 1px">
-<textpath class="displacy-label" fill="currentColor" side="left" startoffset="50%" text-anchor="middle" xlink:href="#arrow-00e81eef154b4d188f94cc0418c47c45-0-33">cc</textpath>
-</text>
-<path class="displacy-arrowhead" d="M6165.0,441.5 L6173.0,429.5 6157.0,429.5" fill="currentColor"></path>
-</g>
-<g class="displacy-arrow">
-<path class="displacy-arc" d="M5320,439.5 C5320,89.5 6345.0,89.5 6345.0,439.5" fill="none" id="arrow-00e81eef154b4d188f94cc0418c47c45-0-34" stroke="currentColor" stroke-width="2px"></path>
-<text dy="1.25em" style="font-size: 0.8em; letter-spacing: 1px">
-<textpath class="displacy-label" fill="currentColor" side="left" startoffset="50%" text-anchor="middle" xlink:href="#arrow-00e81eef154b4d188f94cc0418c47c45-0-34">conj</textpath>
-</text>
-<path class="displacy-arrowhead" d="M6345.0,441.5 L6353.0,429.5 6337.0,429.5" fill="currentColor"></path>
-</g>
-<g class="displacy-arrow">
-<path class="displacy-arc" d="M6370,439.5 C6370,352.0 6505.0,352.0 6505.0,439.5" fill="none" id="arrow-00e81eef154b4d188f94cc0418c47c45-0-35" stroke="currentColor" stroke-width="2px"></path>
-<text dy="1.25em" style="font-size: 0.8em; letter-spacing: 1px">
-<textpath class="displacy-label" fill="currentColor" side="left" startoffset="50%" text-anchor="middle" xlink:href="#arrow-00e81eef154b4d188f94cc0418c47c45-0-35">dobj</textpath>
-</text>
-<path class="displacy-arrowhead" d="M6505.0,441.5 L6513.0,429.5 6497.0,429.5" fill="currentColor"></path>
-</g>
-<g class="displacy-arrow">
-<path class="displacy-arc" d="M6720,439.5 C6720,352.0 6855.0,352.0 6855.0,439.5" fill="none" id="arrow-00e81eef154b4d188f94cc0418c47c45-0-36" stroke="currentColor" stroke-width="2px"></path>
-<text dy="1.25em" style="font-size: 0.8em; letter-spacing: 1px">
-<textpath class="displacy-label" fill="currentColor" side="left" startoffset="50%" text-anchor="middle" xlink:href="#arrow-00e81eef154b4d188f94cc0418c47c45-0-36">aux</textpath>
-</text>
-<path class="displacy-arrowhead" d="M6720,441.5 L6712,429.5 6728,429.5" fill="currentColor"></path>
-</g>
-<g class="displacy-arrow">
-<path class="displacy-arc" d="M6370,439.5 C6370,264.5 6860.0,264.5 6860.0,439.5" fill="none" id="arrow-00e81eef154b4d188f94cc0418c47c45-0-37" stroke="currentColor" stroke-width="2px"></path>
-<text dy="1.25em" style="font-size: 0.8em; letter-spacing: 1px">
-<textpath class="displacy-label" fill="currentColor" side="left" startoffset="50%" text-anchor="middle" xlink:href="#arrow-00e81eef154b4d188f94cc0418c47c45-0-37">xcomp</textpath>
-</text>
-<path class="displacy-arrowhead" d="M6860.0,441.5 L6868.0,429.5 6852.0,429.5" fill="currentColor"></path>
-</g>
-<g class="displacy-arrow">
-<path class="displacy-arc" d="M7070,439.5 C7070,177.0 7565.0,177.0 7565.0,439.5" fill="none" id="arrow-00e81eef154b4d188f94cc0418c47c45-0-38" stroke="currentColor" stroke-width="2px"></path>
-<text dy="1.25em" style="font-size: 0.8em; letter-spacing: 1px">
-<textpath class="displacy-label" fill="currentColor" side="left" startoffset="50%" text-anchor="middle" xlink:href="#arrow-00e81eef154b4d188f94cc0418c47c45-0-38">det</textpath>
-</text>
-<path class="displacy-arrowhead" d="M7070,441.5 L7062,429.5 7078,429.5" fill="currentColor"></path>
-</g>
-<g class="displacy-arrow">
-<path class="displacy-arc" d="M7245,439.5 C7245,264.5 7560.0,264.5 7560.0,439.5" fill="none" id="arrow-00e81eef154b4d188f94cc0418c47c45-0-39" stroke="currentColor" stroke-width="2px"></path>
-<text dy="1.25em" style="font-size: 0.8em; letter-spacing: 1px">
-<textpath class="displacy-label" fill="currentColor" side="left" startoffset="50%" text-anchor="middle" xlink:href="#arrow-00e81eef154b4d188f94cc0418c47c45-0-39">compound</textpath>
-</text>
-<path class="displacy-arrowhead" d="M7245,441.5 L7237,429.5 7253,429.5" fill="currentColor"></path>
-</g>
-<g class="displacy-arrow">
-<path class="displacy-arc" d="M7420,439.5 C7420,352.0 7555.0,352.0 7555.0,439.5" fill="none" id="arrow-00e81eef154b4d188f94cc0418c47c45-0-40" stroke="currentColor" stroke-width="2px"></path>
-<text dy="1.25em" style="font-size: 0.8em; letter-spacing: 1px">
-<textpath class="displacy-label" fill="currentColor" side="left" startoffset="50%" text-anchor="middle" xlink:href="#arrow-00e81eef154b4d188f94cc0418c47c45-0-40">compound</textpath>
-</text>
-<path class="displacy-arrowhead" d="M7420,441.5 L7412,429.5 7428,429.5" fill="currentColor"></path>
-</g>
-<g class="displacy-arrow">
-<path class="displacy-arc" d="M6895,439.5 C6895,89.5 7570.0,89.5 7570.0,439.5" fill="none" id="arrow-00e81eef154b4d188f94cc0418c47c45-0-41" stroke="currentColor" stroke-width="2px"></path>
-<text dy="1.25em" style="font-size: 0.8em; letter-spacing: 1px">
-<textpath class="displacy-label" fill="currentColor" side="left" startoffset="50%" text-anchor="middle" xlink:href="#arrow-00e81eef154b4d188f94cc0418c47c45-0-41">dobj</textpath>
-</text>
-<path class="displacy-arrowhead" d="M7570.0,441.5 L7578.0,429.5 7562.0,429.5" fill="currentColor"></path>
-</g>
-<g class="displacy-arrow">
-<path class="displacy-arc" d="M7770,439.5 C7770,264.5 8085.0,264.5 8085.0,439.5" fill="none" id="arrow-00e81eef154b4d188f94cc0418c47c45-0-42" stroke="currentColor" stroke-width="2px"></path>
-<text dy="1.25em" style="font-size: 0.8em; letter-spacing: 1px">
-<textpath class="displacy-label" fill="currentColor" side="left" startoffset="50%" text-anchor="middle" xlink:href="#arrow-00e81eef154b4d188f94cc0418c47c45-0-42">nsubj</textpath>
-</text>
-<path class="displacy-arrowhead" d="M7770,441.5 L7762,429.5 7778,429.5" fill="currentColor"></path>
-</g>
-<g class="displacy-arrow">
-<path class="displacy-arc" d="M7945,439.5 C7945,352.0 8080.0,352.0 8080.0,439.5" fill="none" id="arrow-00e81eef154b4d188f94cc0418c47c45-0-43" stroke="currentColor" stroke-width="2px"></path>
-<text dy="1.25em" style="font-size: 0.8em; letter-spacing: 1px">
-<textpath class="displacy-label" fill="currentColor" side="left" startoffset="50%" text-anchor="middle" xlink:href="#arrow-00e81eef154b4d188f94cc0418c47c45-0-43">aux</textpath>
-</text>
-<path class="displacy-arrowhead" d="M7945,441.5 L7937,429.5 7953,429.5" fill="currentColor"></path>
-</g>
-<g class="displacy-arrow">
-<path class="displacy-arc" d="M8120,439.5 C8120,352.0 8255.0,352.0 8255.0,439.5" fill="none" id="arrow-00e81eef154b4d188f94cc0418c47c45-0-44" stroke="currentColor" stroke-width="2px"></path>
-<text dy="1.25em" style="font-size: 0.8em; letter-spacing: 1px">
-<textpath class="displacy-label" fill="currentColor" side="left" startoffset="50%" text-anchor="middle" xlink:href="#arrow-00e81eef154b4d188f94cc0418c47c45-0-44">preconj</textpath>
-</text>
-<path class="displacy-arrowhead" d="M8255.0,441.5 L8263.0,429.5 8247.0,429.5" fill="currentColor"></path>
-</g>
-<g class="displacy-arrow">
-<path class="displacy-arc" d="M8295,439.5 C8295,352.0 8430.0,352.0 8430.0,439.5" fill="none" id="arrow-00e81eef154b4d188f94cc0418c47c45-0-45" stroke="currentColor" stroke-width="2px"></path>
-<text dy="1.25em" style="font-size: 0.8em; letter-spacing: 1px">
-<textpath class="displacy-label" fill="currentColor" side="left" startoffset="50%" text-anchor="middle" xlink:href="#arrow-00e81eef154b4d188f94cc0418c47c45-0-45">advmod</textpath>
-</text>
-<path class="displacy-arrowhead" d="M8430.0,441.5 L8438.0,429.5 8422.0,429.5" fill="currentColor"></path>
-</g>
-<g class="displacy-arrow">
-<path class="displacy-arc" d="M8645,439.5 C8645,352.0 8780.0,352.0 8780.0,439.5" fill="none" id="arrow-00e81eef154b4d188f94cc0418c47c45-0-46" stroke="currentColor" stroke-width="2px"></path>
-<text dy="1.25em" style="font-size: 0.8em; letter-spacing: 1px">
-<textpath class="displacy-label" fill="currentColor" side="left" startoffset="50%" text-anchor="middle" xlink:href="#arrow-00e81eef154b4d188f94cc0418c47c45-0-46">nummod</textpath>
-</text>
-<path class="displacy-arrowhead" d="M8645,441.5 L8637,429.5 8653,429.5" fill="currentColor"></path>
-</g>
-<g class="displacy-arrow">
-<path class="displacy-arc" d="M8120,439.5 C8120,264.5 8785.0,264.5 8785.0,439.5" fill="none" id="arrow-00e81eef154b4d188f94cc0418c47c45-0-47" stroke="currentColor" stroke-width="2px"></path>
-<text dy="1.25em" style="font-size: 0.8em; letter-spacing: 1px">
-<textpath class="displacy-label" fill="currentColor" side="left" startoffset="50%" text-anchor="middle" xlink:href="#arrow-00e81eef154b4d188f94cc0418c47c45-0-47">dobj</textpath>
-</text>
-<path class="displacy-arrowhead" d="M8785.0,441.5 L8793.0,429.5 8777.0,429.5" fill="currentColor"></path>
-</g>
-<g class="displacy-arrow">
-<path class="displacy-arc" d="M8820,439.5 C8820,352.0 8955.0,352.0 8955.0,439.5" fill="none" id="arrow-00e81eef154b4d188f94cc0418c47c45-0-48" stroke="currentColor" stroke-width="2px"></path>
-<text dy="1.25em" style="font-size: 0.8em; letter-spacing: 1px">
-<textpath class="displacy-label" fill="currentColor" side="left" startoffset="50%" text-anchor="middle" xlink:href="#arrow-00e81eef154b4d188f94cc0418c47c45-0-48">cc</textpath>
-</text>
-<path class="displacy-arrowhead" d="M8955.0,441.5 L8963.0,429.5 8947.0,429.5" fill="currentColor"></path>
-</g>
-<g class="displacy-arrow">
-<path class="displacy-arc" d="M8995,439.5 C8995,352.0 9130.0,352.0 9130.0,439.5" fill="none" id="arrow-00e81eef154b4d188f94cc0418c47c45-0-49" stroke="currentColor" stroke-width="2px"></path>
-<text dy="1.25em" style="font-size: 0.8em; letter-spacing: 1px">
-<textpath class="displacy-label" fill="currentColor" side="left" startoffset="50%" text-anchor="middle" xlink:href="#arrow-00e81eef154b4d188f94cc0418c47c45-0-49">advmod</textpath>
-</text>
-<path class="displacy-arrowhead" d="M9130.0,441.5 L9138.0,429.5 9122.0,429.5" fill="currentColor"></path>
-</g>
-<g class="displacy-arrow">
-<path class="displacy-arc" d="M9345,439.5 C9345,352.0 9480.0,352.0 9480.0,439.5" fill="none" id="arrow-00e81eef154b4d188f94cc0418c47c45-0-50" stroke="currentColor" stroke-width="2px"></path>
-<text dy="1.25em" style="font-size: 0.8em; letter-spacing: 1px">
-<textpath class="displacy-label" fill="currentColor" side="left" startoffset="50%" text-anchor="middle" xlink:href="#arrow-00e81eef154b4d188f94cc0418c47c45-0-50">det</textpath>
-</text>
-<path class="displacy-arrowhead" d="M9345,441.5 L9337,429.5 9353,429.5" fill="currentColor"></path>
-</g>
-<g class="displacy-arrow">
-<path class="displacy-arc" d="M8820,439.5 C8820,264.5 9485.0,264.5 9485.0,439.5" fill="none" id="arrow-00e81eef154b4d188f94cc0418c47c45-0-51" stroke="currentColor" stroke-width="2px"></path>
-<text dy="1.25em" style="font-size: 0.8em; letter-spacing: 1px">
-<textpath class="displacy-label" fill="currentColor" side="left" startoffset="50%" text-anchor="middle" xlink:href="#arrow-00e81eef154b4d188f94cc0418c47c45-0-51">conj</textpath>
-</text>
-<path class="displacy-arrowhead" d="M9485.0,441.5 L9493.0,429.5 9477.0,429.5" fill="currentColor"></path>
-</g>
-<g class="displacy-arrow">
-<path class="displacy-arc" d="M9520,439.5 C9520,352.0 9655.0,352.0 9655.0,439.5" fill="none" id="arrow-00e81eef154b4d188f94cc0418c47c45-0-52" stroke="currentColor" stroke-width="2px"></path>
-<text dy="1.25em" style="font-size: 0.8em; letter-spacing: 1px">
-<textpath class="displacy-label" fill="currentColor" side="left" startoffset="50%" text-anchor="middle" xlink:href="#arrow-00e81eef154b4d188f94cc0418c47c45-0-52">prep</textpath>
-</text>
-<path class="displacy-arrowhead" d="M9655.0,441.5 L9663.0,429.5 9647.0,429.5" fill="currentColor"></path>
-</g>
-<g class="displacy-arrow">
-<path class="displacy-arc" d="M9870,439.5 C9870,352.0 10005.0,352.0 10005.0,439.5" fill="none" id="arrow-00e81eef154b4d188f94cc0418c47c45-0-53" stroke="currentColor" stroke-width="2px"></path>
-<text dy="1.25em" style="font-size: 0.8em; letter-spacing: 1px">
-<textpath class="displacy-label" fill="currentColor" side="left" startoffset="50%" text-anchor="middle" xlink:href="#arrow-00e81eef154b4d188f94cc0418c47c45-0-53">amod</textpath>
-</text>
-<path class="displacy-arrowhead" d="M9870,441.5 L9862,429.5 9878,429.5" fill="currentColor"></path>
-</g>
-<g class="displacy-arrow">
-<path class="displacy-arc" d="M9695,439.5 C9695,264.5 10010.0,264.5 10010.0,439.5" fill="none" id="arrow-00e81eef154b4d188f94cc0418c47c45-0-54" stroke="currentColor" stroke-width="2px"></path>
-<text dy="1.25em" style="font-size: 0.8em; letter-spacing: 1px">
-<textpath class="displacy-label" fill="currentColor" side="left" startoffset="50%" text-anchor="middle" xlink:href="#arrow-00e81eef154b4d188f94cc0418c47c45-0-54">pobj</textpath>
-</text>
-<path class="displacy-arrowhead" d="M10010.0,441.5 L10018.0,429.5 10002.0,429.5" fill="currentColor"></path>
-</g>
-<g class="displacy-arrow">
-<path class="displacy-arc" d="M9520,439.5 C9520,177.0 10190.0,177.0 10190.0,439.5" fill="none" id="arrow-00e81eef154b4d188f94cc0418c47c45-0-55" stroke="currentColor" stroke-width="2px"></path>
-<text dy="1.25em" style="font-size: 0.8em; letter-spacing: 1px">
-<textpath class="displacy-label" fill="currentColor" side="left" startoffset="50%" text-anchor="middle" xlink:href="#arrow-00e81eef154b4d188f94cc0418c47c45-0-55">acl</textpath>
-</text>
-<path class="displacy-arrowhead" d="M10190.0,441.5 L10198.0,429.5 10182.0,429.5" fill="currentColor"></path>
-</g>
-<g class="displacy-arrow">
-<path class="displacy-arc" d="M10395,439.5 C10395,352.0 10530.0,352.0 10530.0,439.5" fill="none" id="arrow-00e81eef154b4d188f94cc0418c47c45-0-56" stroke="currentColor" stroke-width="2px"></path>
-<text dy="1.25em" style="font-size: 0.8em; letter-spacing: 1px">
-<textpath class="displacy-label" fill="currentColor" side="left" startoffset="50%" text-anchor="middle" xlink:href="#arrow-00e81eef154b4d188f94cc0418c47c45-0-56">advmod</textpath>
-</text>
-<path class="displacy-arrowhead" d="M10395,441.5 L10387,429.5 10403,429.5" fill="currentColor"></path>
-</g>
-<g class="displacy-arrow">
-<path class="displacy-arc" d="M10220,439.5 C10220,264.5 10535.0,264.5 10535.0,439.5" fill="none" id="arrow-00e81eef154b4d188f94cc0418c47c45-0-57" stroke="currentColor" stroke-width="2px"></path>
-<text dy="1.25em" style="font-size: 0.8em; letter-spacing: 1px">
-<textpath class="displacy-label" fill="currentColor" side="left" startoffset="50%" text-anchor="middle" xlink:href="#arrow-00e81eef154b4d188f94cc0418c47c45-0-57">acomp</textpath>
-</text>
-<path class="displacy-arrowhead" d="M10535.0,441.5 L10543.0,429.5 10527.0,429.5" fill="currentColor"></path>
-</g>
-</svg></span>
 </div>
 </div>
 </div>
